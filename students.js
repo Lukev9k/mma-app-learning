@@ -31,3 +31,15 @@ const totalUnpaid = students.reduce((count, student) => {
 }, 0);
 
 console.log("Total unpaid:", totalUnpaid);
+
+// 4. Destructure an object
+const firstStudent = students[0];
+const { name, feePaid, dueDate } = firstStudent;
+console.log(name, feePaid, dueDate);
+
+// 5. Spread operator
+const updatedStudent = { ...firstStudent, feePaid: false };
+console.log(updatedStudent);
+
+// 6. Template literals
+console.log(`${firstStudent.name}'s fee is due on ${firstStudent.dueDate}`);

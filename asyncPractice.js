@@ -13,7 +13,7 @@ async function getInfo() {
         // condition ? "if true" : "if false"
         console.log(`${name} has ${feePaid ? "paid" : "not paid"} their fee of ₹${feeAmount}`);
     } catch (error) {
-        console.log(`Something went wrong: ${error.message}`);
+        console.log(`Something went wrong:  ${error.message}`);
     }
 }
 
